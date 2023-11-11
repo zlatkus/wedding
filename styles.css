@@ -1,0 +1,33 @@
+html {
+  font-family: "Junction", sans-serif;
+}
+
+h1 {
+  display: none;
+}
+
+body {
+  max-width: 34em;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+main {
+  text-align: center;
+}
+
+.main-photo {
+  width: 100%;
+  max-width: 24px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.main-photo:hover {
+  transform: scale(5) rotate(360deg);
+}
