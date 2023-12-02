@@ -21,6 +21,10 @@ main {
   text-align: center;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .main-photo {
   width: 100%;
   max-width: 24px;
