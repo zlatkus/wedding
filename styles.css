@@ -14,6 +14,7 @@ body {
   display: grid;
   place-content: center;
   text-align: center;
+  align-items: center;
 }
 
 main {
@@ -33,4 +34,24 @@ p {
 
 .main-photo:hover {
   transform: scale(5) rotate(360deg);
+}
+
+/* PVD */
+.pvd {
+  max-width: 20rem;
+}
+.pvd h2 {
+  font-weight: 400;
+  color: #85909d;
+  font-size: 1rem;
+}
+
+.pvd p {
+  margin-bottom: 3rem;
+}
+
+.pvd {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
 }
