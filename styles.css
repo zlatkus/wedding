@@ -9,7 +9,7 @@ h1 {
 body {
   max-width: 34em;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 7rem;
 
   display: grid;
   place-content: center;
@@ -38,20 +38,52 @@ p {
 
 /* PVD */
 .pvd {
-  max-width: 20rem;
+  max-width: 14rem;
+  margin-bottom: 10rem;
 }
 .pvd h2 {
-  font-weight: 400;
-  color: #85909d;
+  font-weight: 600;
   font-size: 1rem;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  margin-bottom: 56px;
 }
 
 .pvd p {
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
+  text-align: justify;
 }
 
 .pvd {
   display: flex;
   flex-direction: column;
   margin-top: 6rem;
+}
+
+/* LOGO */
+.amlogo svg {
+  width: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+}
+
+.amlogo:hover svg {
+  animation: spin 1.4s;
+}
+
+.amlogo:hover svg .a-group path {
+  fill: red;
+}
+
+.amlogo:hover svg .m-group path {
+  fill: blue;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
