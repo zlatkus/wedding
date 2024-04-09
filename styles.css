@@ -47,11 +47,13 @@ p {
   text-transform: uppercase;
   transform: rotate(90deg);
   margin-bottom: 56px;
+  margin-left: -400px;
 }
 
 .pvd p {
   margin-bottom: 7rem;
   text-align: justify;
+  transform: translateX(80px);
 }
 
 .pvd {
@@ -85,5 +87,17 @@ p {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .pvd h2 {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    transform: rotate(0deg);
+  }
+
+  .pvd p {
+    transform: unset;
   }
 }
