@@ -1,4 +1,4 @@
-// Set the date we're counting down to
+/* COUNTDOWN */
 var countDownDate = new Date("Sep 27, 2025 00:00:00").getTime();
 
 // Update the count down every 1 second
@@ -18,3 +18,15 @@ var x = setInterval(function () {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+/* CURSOR */
+
+var cursor = document.querySelector(".cursor");
+console.log(cursor);
+document.addEventListener("mousemove", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.left = x + "px";
+  cursor.style.top = y + "px";
+  console.log("it moves");
+});

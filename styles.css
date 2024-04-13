@@ -1,5 +1,6 @@
 html {
-  font-family: "Junction", sans-serif;
+  font-family: "Futura", sans-serif;
+  cursor: none;
 }
 
 h1 {
@@ -9,7 +10,6 @@ h1 {
 body {
   max-width: 34em;
   margin: 0 auto;
-  margin-top: 7rem;
 
   display: grid;
   place-content: center;
@@ -23,6 +23,16 @@ main {
 
 p {
   line-height: 1.5;
+}
+
+a {
+  cursor: none;
+}
+a:focus-visible {
+  outline-offset: 4px;
+  outline-color: black;
+  outline-width: 4px;
+  border-radius: 1px;
 }
 
 .main-photo {
@@ -40,9 +50,12 @@ p {
 .pvd {
   max-width: 14rem;
   margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
 }
 .pvd h2 {
-  font-weight: 600;
+  font-weight: unset;
   font-size: 1rem;
   text-transform: uppercase;
   transform: rotate(90deg);
@@ -56,10 +69,21 @@ p {
   transform: translateX(80px);
 }
 
-.pvd {
-  display: flex;
-  flex-direction: column;
-  margin-top: 6rem;
+.glastonbury-button {
+  background: blue;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 2px;
+  margin-top: 2rem;
+  text-decoration: none;
+  border: 2px solid blue;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.glastonbury-button:hover {
+  border-color: red;
 }
 
 /* LOGO */
@@ -100,4 +124,18 @@ p {
   .pvd p {
     transform: unset;
   }
+}
+
+/* CURSOR */
+.cursor {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 100;
 }
