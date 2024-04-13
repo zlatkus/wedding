@@ -30,3 +30,14 @@ document.addEventListener("mousemove", function (e) {
   cursor.style.top = y + "px";
   console.log("it moves");
 });
+
+var a = document.querySelectorAll("a");
+
+a.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    cursor.classList.add("hover");
+  });
+  item.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+  });
+});

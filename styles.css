@@ -82,10 +82,6 @@ a:focus-visible {
   right: 1rem;
 }
 
-.glastonbury-button:hover {
-  border-color: red;
-}
-
 /* LOGO */
 .amlogo svg {
   width: 2rem;
@@ -128,14 +124,22 @@ a:focus-visible {
 
 /* CURSOR */
 .cursor {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   border-radius: 100%;
   background-color: black;
-  opacity: 0.8;
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: width 0.3s, height 0.3s, opacity 0.3s;
   z-index: 100;
+}
+
+.hover {
+  background-color: red;
+  outline-offset: 4px;
+  width: 16px;
+  height: 16px;
+  outline: 2px solid red;
+  transition-duration: 0.2s;
 }
