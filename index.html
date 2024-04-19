@@ -6,12 +6,65 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   </head>
-  <body>
+  <body class="glastonbury">
+    <div class="cursor"></div>
+
+    <h1>wedding celebration</h1>
+    <a target="_blank" href="https://tally.so/r/3ly1ep">rsvp</a>
+    <button
+      class="tablinks"
+      onclick="openTab(event, 'dates')"
+      role="tab"
+      aria-controls="dates"
+      aria-selected="true"
+    >
+      dates
+    </button>
+    <a href="https://tenlivescatrescue.org/donate/" target="_blank">registry</a>
+    <button
+      class="tablinks"
+      onclick="openTab(event, 'dress')"
+      role="tab"
+      aria-controls="dress"
+      aria-selected="false"
+    >
+      dress
+    </button>
+
+    <p>alex&masha</p>
+
+    <div
+      id="dates"
+      class="tabcontent"
+      role="tabpanel"
+      aria-labelledby="defaultOpen"
+    >
+      <p>
+        join us for an all-day* party on saturday, september 26th. 12-5p.2174 main st, glastonbury, ct.</p>
+      </p>
+      <p>getting in earlier? come by for a cocktail hour on friday, september 25th, at the connecticut river valley inn.
+      </p>
+    </div>
+
+    <div
+      id="dress"
+      class="tabcontent"
+      role="tabpanel"
+      aria-labelledby="tabdress"
+    >
+      <p>
+        cocktail attire for the cocktail hour on friday. casual and relaxed for
+        the party on saturday.
+      </p>
+    </div>
+  </body>
+  <!-- <body>
     <div class="countdown" id="countdown">
       <span id="seconds">-------</span>
     </div>
     <p>coming soon</p>
     <a href="https://tally.so/r/3ly1ep">rsvp</a>
     <script src="script.js"></script>
-  </body>
+  </body> -->
+  <script src="cursor.js"></script>
 </html>

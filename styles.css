@@ -3,28 +3,17 @@ html {
   cursor: none;
 }
 
-h1 {
-  display: none;
-}
-
 body {
-  max-width: 34em;
-  margin: 0 auto;
-
-  display: grid;
-  place-content: center;
-  text-align: center;
-  align-items: center;
+  margin: 0;
 }
 
 main {
   text-align: center;
 }
 
-p {
-  line-height: 1.5;
+button {
+  cursor: none;
 }
-
 a {
   cursor: none;
 }
@@ -48,12 +37,19 @@ a:focus-visible {
 
 /* PVD */
 .pvd {
+  margin: 0 auto;
+  align-items: center;
   max-width: 14rem;
   margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
+
+.pvd h1 {
+  display: none;
+}
+
 .pvd h2 {
   font-weight: unset;
   font-size: 1rem;
@@ -63,10 +59,17 @@ a:focus-visible {
   margin-left: -400px;
 }
 
-.pvd p {
+.pvd p,
+.pvd ol {
+  padding: 0;
   margin-bottom: 7rem;
   text-align: justify;
   transform: translateX(80px);
+  line-height: 1.5;
+}
+
+.pvd ol {
+  list-style: none;
 }
 
 .glastonbury-button {
@@ -78,9 +81,8 @@ a:focus-visible {
   margin-top: 2rem;
   text-decoration: none;
   border: 2px solid blue;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 @media (hover: hover) {
@@ -125,7 +127,8 @@ a:focus-visible {
     text-align: end;
   }
 
-  .pvd p {
+  .pvd p,
+  .pvd ol {
     transform: unset;
   }
 }
@@ -141,6 +144,7 @@ a:focus-visible {
   pointer-events: none;
   transition: width 0.3s, height 0.3s, opacity 0.3s;
   z-index: 100;
+  mix-blend-mode: exclusion;
 }
 
 .hover {
@@ -150,4 +154,68 @@ a:focus-visible {
   height: 16px;
   outline: 2px solid red;
   transition-duration: 0.2s;
+}
+
+/* GLASTONBURY */
+.glastonbury {
+  margin: 1rem 0;
+}
+
+html {
+  --font-size: clamp(4rem, 4vw, 12rem);
+}
+
+.glastonbury h1 {
+  margin: 0;
+  margin-right: 1.5rem;
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 100%;
+  display: inline-block;
+}
+
+.glastonbury button {
+  font-size: var(--font-size);
+  background: none;
+  border: none;
+  margin: 0 0.24rem;
+  color: blue;
+  text-decoration: underline;
+  font-family: Futura, sans-serif;
+  line-height: 100%;
+  text-align: start;
+  padding: 0;
+}
+
+.glastonbury button:last-of-type {
+  margin-right: 1.5rem;
+}
+
+.glastonbury a {
+  font-size: var(--font-size);
+  line-height: 100%;
+  color: red;
+  margin: 0 0.24rem;
+}
+
+.glastonbury p {
+  font-size: var(--font-size);
+  margin: 0;
+  display: inline;
+  line-height: 100%;
+}
+
+.glastonbury .countdown {
+  padding: 0 0.4rem;
+}
+
+.tabcontent {
+  display: none;
+  margin-top: 4rem;
+}
+
+.glastonbury a:focus-visible,
+.glastonbury button:focus-visible {
+  outline: unset;
+  box-shadow: inset 0px 0px 0 4px green;
 }

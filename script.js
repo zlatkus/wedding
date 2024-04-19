@@ -18,26 +18,3 @@ var x = setInterval(function () {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
-
-/* CURSOR */
-
-var cursor = document.querySelector(".cursor");
-console.log(cursor);
-document.addEventListener("mousemove", function (e) {
-  var x = e.clientX;
-  var y = e.clientY;
-  cursor.style.left = x + "px";
-  cursor.style.top = y + "px";
-  console.log("it moves");
-});
-
-var a = document.querySelectorAll("a");
-
-a.forEach((item) => {
-  item.addEventListener("mouseover", () => {
-    cursor.classList.add("hover");
-  });
-  item.addEventListener("mouseleave", () => {
-    cursor.classList.remove("hover");
-  });
-});
