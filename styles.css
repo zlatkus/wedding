@@ -72,6 +72,16 @@ a:focus-visible {
   list-style: none;
 }
 
+.pvd-map {
+  width: 640px;
+  margin-bottom: 200px;
+}
+
+@media (max-width: 560px) {
+  .pvd-map {
+    width: 360px;
+  }
+}
 .glastonbury-button {
   display: none;
   background: blue;
