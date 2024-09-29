@@ -211,7 +211,9 @@ html {
 .glastonbury p {
   font-size: var(--font-size);
   margin: 0;
-  display: inline;
+  text-wrap: pretty;
+  padding-bottom: 1rem;
+  display: flex;
   line-height: 100%;
 }
 
