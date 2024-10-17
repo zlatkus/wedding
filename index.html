@@ -10,27 +10,38 @@
     <div class="cursor"></div>
 
     <h1>wedding celebration</h1>
-    <a target="_blank" href="https://tally.so/r/3ly1ep">rsvp</a>
-    <button
-      class="tablinks"
-      onclick="openTab(event, 'dates')"
-      role="tab"
-      aria-controls="dates"
-      aria-selected="true"
-    >
-      dates
-    </button>
-    <button
-      class="tablinks"
-      onclick="openTab(event, 'dress')"
-      role="tab"
-      aria-controls="dress"
-      aria-selected="false"
-    >
-      dress
-    </button>
-
     <p>alex&masha</p>
+    <nav>
+      <a target="_blank" href="https://tally.so/r/3ly1ep">rsvp</a>
+
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'dates')"
+        role="tab"
+        aria-controls="dates"
+        aria-selected="true"
+      >
+        dates
+      </button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'dress')"
+        role="tab"
+        aria-controls="dress"
+        aria-selected="false"
+      >
+        dress
+      </button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'hotels')"
+        role="tab"
+        aria-controls="hotels"
+        aria-selected="false"
+      >
+        hotels
+      </button>
+    </nav>
 
     <div
       id="dates"
@@ -39,31 +50,51 @@
       aria-labelledby="defaultOpen"
     >
       <p>
-        join us for an all-day party on saturday, september 27th 12-5p. 2174 main st, glastonbury, ct.</p>
+        join us for an all-day party on saturday, september 27th 12-5p.
+        2174 main st, glastonbury, ct.
       </p>
-      <p>getting in earlier? come by for a cocktail hour on friday, september 26th, at the connecticut river valley inn.
+      <p>
+        getting in earlier? come by for a cocktail hour on friday,
+        september 26th 5:30–8p, at the connecticut river valley inn.
       </p>
     </div>
 
+    <div id="dress" class="tabcontent" role="tabpanel" aria-labelledby="dress">
+      <p>cocktail attire for the cocktail hour on friday.</p>
+      <p>casual and relaxed for the party on saturday.</p>
+    </div>
+
     <div
-      id="dress"
+      id="hotels"
       class="tabcontent"
       role="tabpanel"
-      aria-labelledby="tabdress"
+      aria-labelledby="hotels"
     >
-      <p>
-        cocktail attire for the cocktail hour on friday. casual and relaxed for
-        the party on saturday.
-      </p>
+      <p>there are two hotels that have room blocks.</p>
+      <ul>
+        <li>
+          <a
+            href="https://www.hilton.com/en/hotels/bdlghgi-hilton-garden-inn-hartford-south-glastonbury/"
+            target="_blank"
+            >hilton garden inn</a
+          >. book by august 27th to get the rate. can cancel reservation 48
+          hours prior to arrival. use code <span class="highlight">90D</span> if
+          rate is not showing from the link. check other hotel if room block has
+          been exceeded.
+        </li>
+        <li>
+          <a
+            href="https://www.hilton.com/en/hotels/hdfgbhw-homewood-suites-hartford-south-glastonbury/"
+            target="_blank"
+            >homewood suites</a
+          >. book by August 27th to get the rate. can cancel reservation 72
+          hours prior to arrival. use code <span class="highlight">90O</span> if
+          rate is not showing from the link. check other hotel if room block has
+          been exceeded.
+        </li>
+      </ul>
     </div>
   </body>
-  <!-- <body>
-    <div class="countdown" id="countdown">
-      <span id="seconds">-------</span>
-    </div>
-    <p>coming soon</p>
-    <a href="https://tally.so/r/3ly1ep">rsvp</a>
-    <script src="script.js"></script>
-  </body> -->
+
   <script src="cursor.js"></script>
 </html>

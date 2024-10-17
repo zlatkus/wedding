@@ -167,12 +167,15 @@ a:focus-visible {
 }
 
 /* GLASTONBURY */
-.glastonbury {
-  margin: 1rem 0;
+html {
+  /* --font-size: clamp(2rem, 4vw, 6rem); */
+  --font-size: 2rem;
 }
 
-html {
-  --font-size: clamp(4rem, 4vw, 12rem);
+.glastonbury {
+  margin: 3rem;
+
+  font-size: var(--font-size);
 }
 
 .glastonbury h1 {
@@ -214,7 +217,16 @@ html {
   text-wrap: pretty;
   padding-bottom: 1rem;
   display: flex;
-  line-height: 100%;
+}
+
+.glastonbury .highlight {
+  background-color: rgba(255, 255, 0, 0.7);
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+.glastonbury li {
+  margin-bottom: 1rem;
 }
 
 .glastonbury .countdown {
@@ -229,5 +241,11 @@ html {
 .glastonbury a:focus-visible,
 .glastonbury button:focus-visible {
   outline: unset;
-  box-shadow: inset 0px 0px 0 4px green;
+  box-shadow: inset 0px 0px 0 4px inherit;
+}
+
+@media (max-width: 700px) {
+  .glastonbury {
+    margin: 1.5rem;
+  }
 }
