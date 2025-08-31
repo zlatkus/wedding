@@ -213,7 +213,6 @@ html {
   margin: 0;
   text-wrap: pretty;
   padding-bottom: 1rem;
-  display: flex;
 }
 
 .glastonbury .gb-highlight {

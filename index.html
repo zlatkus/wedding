@@ -39,9 +39,25 @@
       >
         hotels
       </button>
-      <a target="_blank" href="https://tally.so/r/3ly1ep"
-        >rsvp (by january 25th)</a
+       <button
+        class="tablinks"
+        onclick="openTab(event, 'parking')"
+        role="tab"
+        aria-controls="parking"
+        aria-selected="false"
       >
+        parking
+      </button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'aboutgifts')"
+        role="tab"
+        aria-controls="aboutgifts"
+        aria-selected="false"
+      >
+        registry
+      </button>
+   
     </nav>
 
     <div
@@ -51,12 +67,11 @@
       aria-labelledby="defaultOpen"
     >
       <p>
-        join us for an all-day party on saturday, september 27th 12-5p.
-        2174 main st, glastonbury, ct.
+        cocktail event: friday, september 26th 6–8:15p, at the <a href="https://maps.app.goo.gl/vhx2QpPfKJr5g6G68" target="_blank">connecticut river valley inn</a>
       </p>
       <p>
-        arriving early? come by for food and drinks on friday,
-        september 26th 6–8:15p, at the connecticut river valley inn.
+        main event: saturday, september 27th 12-5p. <a href="https://maps.app.goo.gl/CWn2MCVFbWLquSH78" target="_blank">2174 main st, glastonbury, ct</a>
+
       </p>
     </div>
 
@@ -94,6 +109,24 @@
           link. check other hotel if room block has been exceeded.
         </li>
       </ul>
+    </div>
+
+    <div
+      id="parking"
+      class="tabcontent"
+      role="tabpanel"
+      aria-labelledby="parking"
+    >
+      <p>for those driving to the events, we have arranged for parking behind the <a href="https://maps.app.goo.gl/ws6sqUhXwwd4oFS59" target="_blank">first church of christ</a>.</p>
+      <p>this is right next to the inn, and across the street from the house. you will not be able to park at the inn or the house.</p>
+    </div>
+
+    <div id="aboutgifts"
+    class="tabcontent"
+      role="tabpanel"
+      aria-labelledby="aboutgifts">
+      <p>there is no registry for this event.</p>
+      <p>all we ask is that you enjoy yourself and appreciate autumn in new england :)</p>
     </div>
   </body>
 
